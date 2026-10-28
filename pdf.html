@@ -1,0 +1,39 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Come Bem, Mexe Bem PDF</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Página de entrada de uma coluna: nome do material, um botão grande para o PDF, link secundário para o site. */
+:root{
+  --bg:#F1F6EF; --surface:#FFFFFF; --fg:#13302A; --muted:#476059; --line:#CFDDD2;
+  --leaf:#1D6B4E; --leaf-ink:#FFFFFF; --mango:#F4A300; --mango-ink:#2B1B00;
+  --font:"Trebuchet MS","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1B17; --surface:#162A24; --fg:#E6F1EA; --muted:#A5BFB4; --line:#2B433B;
+  --leaf:#55C99C; --leaf-ink:#06231A; --mango:#F7B733; --mango-ink:#2B1B00; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1B17; --surface:#162A24; --fg:#E6F1EA; --muted:#A5BFB4; --line:#2B433B;
+  --leaf:#55C99C; --leaf-ink:#06231A; --mango:#F7B733; --mango-ink:#2B1B00; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:1.125rem/1.4 var(--font);
+  padding-block:2rem 3rem;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:34rem;margin:0 auto;display:flex;flex-direction:column;gap:1.25rem}
+.brand{display:flex;align-items:center;gap:.5rem;font-weight:800}
+.brand i{width:.9rem;height:.9rem;border-radius:50%;display:block}
+.brand i:nth-child(1){background:#F4A300}.brand i:nth-child(2){background:#C42F49}.brand i:nth-child(3){background:#1D6B4E}
+h1{margin:0;font-size:clamp(2rem,9vw,2.8rem);line-height:1.05;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}.muted{color:var(--muted);font-size:.95rem}
+.btn{display:flex;align-items:center;justify-content:center;min-height:4.2rem;padding:.6rem 1.2rem;border-radius:18px;font-weight:800;font-size:1.3rem;text-decoration:none;text-align:center}
+.btn.main{background:var(--leaf);color:var(--leaf-ink)}
+.btn.alt{background:var(--surface);color:var(--fg);border:3px solid var(--line);font-size:1.1rem;min-height:3.6rem}
+.btn:hover{filter:brightness(1.07)}
+:focus-visible{outline:4px solid var(--mango);outline-offset:2px}
+</style></head><body>
+<div class="wrap">
+  <div class="brand"><span style="display:inline-flex;gap:4px" aria-hidden="true"><i></i><i></i><i></i></span>Come Bem, Mexe Bem</div>
+  <h1>Come bem. Mexe bem.</h1>
+  <p class="muted">PDF com botões: toque para escolher Criança, Adulto ou Idoso, jogar e dar sua opinião. Depois de baixado, funciona sem internet.</p>
+  <a class="btn main" href="Come_Bem_Mexe_Bem.pdf" target="_blank" rel="noopener">Abrir o PDF</a>
+  <a class="btn alt" href="./" >Abrir o site</a>
+  <p class="muted">Se os botões do PDF não funcionarem, baixe o arquivo e abra no leitor de PDF do celular (Drive, Chrome ou Arquivos). A pré-visualização do WhatsApp não deixa tocar nos botões.</p>
+</div>
+</body></html>
